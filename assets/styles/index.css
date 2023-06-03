@@ -1,0 +1,161 @@
+:root {
+    --main-bg-color: #000000;
+    --red-color: #F51B1B;
+    --white-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 3rem;
+    background-color: var(--main-bg-color);
+    color: var(--white-color);
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+header img {
+    height: 20px;
+}
+
+#logo2 {
+    height: 30px;
+}
+
+.red {
+    color: var(--red-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-height: calc(100vh - 8rem);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.end {
+    flex-grow: 1;
+}
+
+section > * {
+    width: 100%;
+}
+
+.left {
+    height: calc(100vh - 8rem);
+}
+
+.me {
+    background-color: var(--red-color);
+    padding: 2rem 1rem 4rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    flex-grow: 1;
+}
+
+.me h1 {
+    margin-bottom: .5rem;
+}
+
+.contacts {
+    margin-top: 3rem;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+#skills {
+    border: 1px solid var(--white-color)
+}
+
+.border-wrapper {
+    border: 1px solid var(--white-color);
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.border-wrapper--item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom:2rem;
+    padding-bottom: 2rem;
+}
+
+.border-wrapper--item h2 {
+    font-weight: 500;
+}
+
+.border-wrapper--item h3 {
+    font-weight: 400;
+}
+
+.border-wrapper--item:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.border-wrapper--item span {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.states > div {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.skills {
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+}
+
+/*@media screen and (min-width: 800px) {*/
+/*    header {*/
+/*        position: absolute;*/
+/*        top: 2rem;*/
+/*        right: 3rem;*/
+/*    }*/
+
+/*    main {*/
+/*        flex-direction: row;*/
+/*    }*/
+
+/*    .left {*/
+/*        width: 50%;*/
+/*    }*/
+
+/*    #main-info p {*/
+/*        width: 70%;*/
+/*        margin-top: 1rem;*/
+/*    }*/
+
+/*    .border-wrapper--item {*/
+/*        gap: 8rem;*/
+/*        flex-direction: row;*/
+/*    }*/
+/*}*/
