@@ -21,7 +21,20 @@ body {
 
 a {
     color: var(--white-color);
+}
+
+.me a {
     text-decoration: none;
+}
+
+li a {
+    display: block;
+    margin-top: 4px;
+}
+
+li {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 p {
@@ -253,5 +266,9 @@ div.round {
     .top-rounded-container {
         width: 125px;
         margin-left: 1rem;
+    }
+
+    li {
+        margin-left: 2rem;
     }
 }
